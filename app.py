@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -8,8 +9,8 @@ def index():
 
 @app.route('/error')
 def error():
-    # Simulate an error by raising an exception
-    raise Exception("An intentional error occurred.")
+    print("Server is quitting...")
+    os._exit(0)  # Exit the server process
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=81)
