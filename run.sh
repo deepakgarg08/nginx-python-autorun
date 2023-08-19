@@ -1,6 +1,4 @@
 #!/bin/bash
 
-echo "1/2..."
-docker build -t nginx-gunicorn-python-docker .
-echo "2/2..."
-docker-compose up --build
+echo "Building and running python docker image..."
+docker-compose up --build -d # -d run containers in background

@@ -1,8 +1,8 @@
 version: "3.8"
 services:
-    nodeserver:
+    pyserver:  # this name corresponds with the `proxy_pass http://pyserver:81;` in nginx/default.conf
         build:
-            context: /
+            context: /app
         ports:
             - "81:81"
     nginx:
