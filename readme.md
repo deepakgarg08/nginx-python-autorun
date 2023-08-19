@@ -2,7 +2,19 @@
 
 This project is minimal python project, which is running flask server with gunicorn which automatically runs the server in the background and restarts it when it crashes. Nginx is used as a reverse proxy.
 
-## Installation
+# Quick start
+# docker and docker compose must be installed for this
+
+```chmod +x run.sh
+./run.sh```
+
+## hosts
+```
+nginx: localhost:82
+flask: localhost:81
+```
+
+## Installation Details
 
 - Install Python and pip.
 

@@ -1,0 +1,7 @@
+# docker network create mynetwork
+# docker run -d --name flask-app-1908 --network mynetwork -p 81:81 python-gun-nginx-dev
+# # docker run -d --name nginx-container-1908 --network mynetwork -p 82:82 -v nginx.conf:/etc/nginx/nginx.conf:ro nginx:latest
+# docker run -d --name nginx-container-1908 --network mynetwork -p 82:82 -v nginx.conf:/etc/nginx/nginx.conf:ro nginx:latest
+
+
+# I guess these were required when running in the same alpine linux one docker image
